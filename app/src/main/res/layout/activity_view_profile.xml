@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6C1C1"
+    android:orientation="vertical"
+    tools:context=".ViewProfile">
+
+    <ImageView
+        android:id="@+id/arrowBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_back_"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="171dp"
+        app:cardCornerRadius="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profile_image"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_marginTop="100dp"
+                android:layout_width="120dp"
+                android:src="@drawable/profile"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                tools:ignore="MissingClass" />
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Name"
+                android:gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>
